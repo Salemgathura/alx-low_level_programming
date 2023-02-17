@@ -1,20 +1,19 @@
 # include <stdlib.h>
 # include <time.h>
-#include <stdio.h>
+# include <stdio.h>
 
-int main(void) {
-  int n = 0;
-
-  printf("Enter an integer: ");
-  scanf("%d", &n);
-
-  if (n > 0) {
-    printf("%d is positive\n", n);
-  } else if (n == 0) {
-    printf("%d is zero\n", n);
-  } else {
-    printf("%d is negative\n", n);
-  }
-
-  return 0;
+int main() {
+    int n;
+    printf("Enter an integer: ");
+    scanf("%d", &n);
+    if (n > 0) {
+        printf("%d is positive\n", n);
+    } else if (n < 0) {
+        printf("%d is negative\n", n);
+    } else {
+        printf("0 is neither positive nor negative\n");
+    }
+    return 0;
 }
+
+
